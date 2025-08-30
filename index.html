@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Location Information</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Maps API Key (async and defer added for better performance) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>IP Lokatsiya</h1>
+    <div id="location-info">
+      <p><strong>IP Address:</strong> <span id="ip"></span></p>
+      <p><strong>Viloyat:</strong> <span id="city"></span></p>
+      <p><strong>Shaxar:</strong> <span id="country"></span></p>
+      <p><strong>ISP:</strong> <span id="isp"></span></p>
+    </div>
+    <div id="map" style="height: 400px; width: 100%;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
